@@ -23,3 +23,4 @@ public class MyFragment  extends Fragment {
         return inflate;
     }
 }
+
