@@ -8,7 +8,7 @@
        android:layout_height="wrap_content"
        android:text="我的"
        android:gravity="center"
-       android:textSize="12pt"
+       android:textSize="35pt"
        android:textColor="@color/white"
        android:background="@color/colorRedPrimaryDark"/>
 
