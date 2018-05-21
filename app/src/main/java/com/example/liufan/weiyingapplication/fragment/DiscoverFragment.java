@@ -8,6 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.liufan.weiyingapplication.Lateralspreads.ResideLayout;
+import com.example.liufan.weiyingapplication.R;
 
 /**
  * Created by liufan on 2018/5/21.
@@ -17,8 +21,7 @@ public class DiscoverFragment  extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText("三生三世55");
-        return textView;
+        View view = inflater.inflate (R.layout.discover_layout, container, false);
+        return view;
     }
 }

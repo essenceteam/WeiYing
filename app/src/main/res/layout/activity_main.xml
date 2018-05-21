@@ -14,7 +14,6 @@
         android:layout_weight="1"
         android:background="@drawable/fff">
     </FrameLayout>
-
     <RadioGroup
         android:id="@+id/tab_rg_menu"
         android:layout_width="match_parent"
