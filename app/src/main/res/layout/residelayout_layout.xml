@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.liufan.weiyingapplication.Lateralspreads.ResideLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/resideLayout"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <ImageView
+            android:id="@+id/resideHeadImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resideHeadImg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="微影，微一下"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/resideListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/desc"
+            android:layout_marginLeft="25dp"></ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <include layout="@layout/activity_main"></include>
+
+    </RelativeLayout>
+
+</com.example.liufan.weiyingapplication.Lateralspreads.ResideLayout>

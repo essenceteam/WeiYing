@@ -5,8 +5,11 @@ package com.example.liufan.weiyingapplication;
 
 
 import android.support.v4.app.FragmentManager;
+import android.view.View;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
+import com.example.liufan.weiyingapplication.Lateralspreads.ResideLayout;
 import com.example.liufan.weiyingapplication.base.BaseActivity;
 import com.example.liufan.weiyingapplication.fragment.ChoicenessFragment;
 import com.example.liufan.weiyingapplication.fragment.DiscoverFragment;
@@ -21,19 +24,38 @@ public class MainActivity extends BaseActivity {
     private DiscoverFragment discoverFragment;
     private SpecialFragment specialFragment;
     private MyFragment myFragment;
+    private ResideLayout resideLayout;
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.residelayout_layout;
     }
 
     @Override
     protected void getView() {
         tab_rg_menu = findViewById(R.id.tab_rg_menu);
+        resideLayout = findViewById (R.id.resideLayout);
     }
 
     @Override
     protected void getData() {
+        resideLayout.setPanelSlideListener (new ResideLayout.PanelSlideListener () {
+            @Override
+            public void onPanelSlide(View panel, float slideOffset) {
+
+            }
+
+            @Override
+            public void onPanelOpened(View panel) {
+                Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
+            }
+
+            @Override
+            public void onPanelClosed(View panel) {
+                Toast.makeText (MainActivity.this,"关闭",Toast.LENGTH_SHORT).show ();
+            }
+        });
+
         //精选
         choicenessFragment = new ChoicenessFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.lf, choicenessFragment).commit();
