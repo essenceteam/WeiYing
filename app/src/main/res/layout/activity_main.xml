@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="700pt"
         android:layout_weight="1"
-        ></FrameLayout>
+        android:background="@drawable/fff">
+    </FrameLayout>
 
     <RadioGroup
         android:id="@+id/tab_rg_menu"
@@ -23,42 +24,28 @@
 
         <RadioButton
             android:id="@+id/tab_rb_1"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:button="@null"
+            style="@style/tab_rb_style"
             android:checked="true"
-            android:gravity="center"
             android:drawableTop="@drawable/tab_02"
             android:text="精选" />
 
         <RadioButton
             android:id="@+id/tab_rb_2"
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@null"
+            style="@style/tab_rb_style"
+
             android:drawableTop="@drawable/tab_03"
             android:text="专题" />
 
         <RadioButton
             android:id="@+id/tab_rb_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@null"
+            style="@style/tab_rb_style"
             android:drawableTop="@drawable/tab_01"
-            android:text="发现"
-            android:gravity="center"/>
+            android:text="发现"/>
 
         <RadioButton
             android:id="@+id/tab_rb_4"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@null"
+            style="@style/tab_rb_style"
             android:drawableTop="@drawable/tab_04"
-            android:gravity="center"
             android:text="我的"
             android:layout_width="match_parent" />
 
