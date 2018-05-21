@@ -7,6 +7,23 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="lmatch_hwrap_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mine_lin_style" parent="lmatch_hwrap_style">
+        <item name="android:padding">13dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+    <style name="common_tv_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
     <style name="tab_rb_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -20,4 +37,5 @@
         <item name="android:drawablePadding">0dp</item>
         <item name="android:textColor">@color/tab_selector</item>
     </style>
+
 </resources>

@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.liufan.weiyingapplication.R;
+
 /**
  * Created by liufan on 2018/5/21.
  */
@@ -17,8 +19,7 @@ public class MyFragment  extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText("三生三世66");
-        return textView;
+         View inflate = View.inflate(getActivity(), R.layout.myfragment, null);
+        return inflate;
     }
 }

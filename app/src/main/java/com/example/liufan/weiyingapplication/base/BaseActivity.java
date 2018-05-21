@@ -1,16 +1,12 @@
 package com.example.liufan.weiyingapplication.base;
 
-import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.SupportActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.liufan.weiyingapplication.R;
 
 /**
  * Created by liufan on 2018/5/14.
