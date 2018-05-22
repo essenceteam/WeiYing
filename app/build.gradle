@@ -42,6 +42,9 @@ android {
         compile 'com.android.support:recyclerview-v7:26.1.0'
         //fresco  图片
         compile 'com.facebook.fresco:fresco:0.14.1+'
+        //butterknife
+        compile 'com.jakewharton:butterknife:8.4.0'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
     }
 }
 dependencies {
