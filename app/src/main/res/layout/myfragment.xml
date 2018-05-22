@@ -3,43 +3,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-   <TextView
-       android:layout_marginTop="25pt"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="我的"
-       android:gravity="center"
-       android:textSize="45pt"
-       android:textColor="@color/white"
-       android:background="#006633"/>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="80pt"
-    android:background="@drawable/my_bg_colorful"
-    android:orientation="horizontal">
-   <ImageView
-       android:id="@+id/img_setting"
-       style="@style/lmatch_hwrap_style"
-       android:layout_marginLeft="750pt"
-       android:layout_marginTop="40pt"
-       android:background="@mipmap/my_set" />
-</LinearLayout>
 
-   <LinearLayout
-       android:orientation="horizontal"
-       android:id="@+id/rl_record"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-      <TextView
-          android:id="@+id/tv_history"
-          style="@style/common_tv_style"
-          android:layout_centerVertical="true"
-          android:text="历史" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25pt"
+        android:background="#006633"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/white"
+        android:textSize="45pt" />
 
-      <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="@mipmap/right" />
-   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260pt"
+        android:background="@drawable/my_bg_colorful"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/img_setting"
+            style="@style/lmatch_hwrap_style"
+            android:layout_marginLeft="750pt"
+            android:layout_marginTop="40pt"
+            android:background="@mipmap/my_set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200pt"
+        android:layout_marginTop="50pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_history"
+            style="@style/common_tv_style"
+            android:layout_centerVertical="true"
+            android:text="历史" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="550pt"
+        android:layout_height="1pt"
+        android:layout_gravity="center"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200pt"
+        android:layout_marginTop="50pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_down"
+            style="@style/common_tv_style"
+            android:layout_centerVertical="true"
+            android:text="缓存" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="550pt"
+        android:layout_height="1pt"
+        android:layout_gravity="center"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200pt"
+        android:layout_marginTop="50pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_collection"
+            style="@style/common_tv_style"
+            android:layout_centerVertical="true"
+            android:text="收藏" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="550pt"
+        android:layout_height="1pt"
+        android:layout_gravity="center"
+        android:background="@color/white"></View>
+
+    <LinearLayout
+        android:id="@+id/rl_them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200pt"
+        android:layout_marginTop="50pt"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_them"
+            style="@style/common_tv_style"
+            android:layout_centerVertical="true"
+            android:text="主题" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="550pt"
+        android:layout_height="1pt"
+        android:layout_gravity="center"
+        android:background="@color/white"></View>
 </LinearLayout>

@@ -17,10 +17,10 @@
 
         <ImageView
             android:id="@+id/resideHeadImg"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="55dp"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_marginLeft="25pt"
+            android:layout_marginTop="55pt"
             android:scaleType="fitXY"
             android:src="@mipmap/photo" />
 
@@ -29,25 +29,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/resideHeadImg"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="80dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25pt"
+            android:layout_marginRight="80pt"
+            android:layout_marginTop="5pt"
             android:ellipsize="end"
             android:maxLines="1"
-            android:padding="10dp"
+            android:padding="10pt"
             android:text="微影，微一下"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
         <RelativeLayout
             android:id="@+id/le"
             android:layout_width="match_parent"
-            android:layout_height="860px"
+            android:layout_height="860pt"
             android:layout_below="@id/desc">
         <ListView
             android:id="@+id/resideListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="25dp"></ListView>
+            android:layout_marginLeft="25pt"></ListView>
 
         </RelativeLayout>
 
