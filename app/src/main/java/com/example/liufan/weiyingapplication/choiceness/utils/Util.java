@@ -3,7 +3,7 @@ package com.example.liufan.weiyingapplication.choiceness.utils;
 import com.example.liufan.weiyingapplication.choiceness.Api.Choi_Apiservers;
 
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
@@ -29,7 +29,7 @@ public class Util {
     public Choi_Apiservers getnetjson(String uri){
         Retrofit retrofit = new Retrofit.Builder().baseUrl(uri)
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
         Choi_Apiservers testservive = retrofit.create(Choi_Apiservers.class);
         return testservive;
