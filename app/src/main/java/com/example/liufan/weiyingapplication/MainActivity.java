@@ -64,7 +64,6 @@ public class MainActivity extends BaseActivity {
             public void onPanelOpened(View panel) {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
                 arr1 = new ArrayList<> ();
-
                 for (int i = 0; i <name.length ; i++) {
                     ResideBean ResideBean=new ResideBean (name[i],R.drawable.fff);
                     arr1.add (ResideBean);
