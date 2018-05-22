@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<merger version="3"><dataSet config="main"><source path="D:\dashixun1\git_shi1\WeiYing\library\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\dashixun1\git_shi1\WeiYing\library\src\debug\shaders"/></dataSet></merger>
+=======
+<<<<<<< HEAD
+<merger version="3"><dataSet config="main"><source path="A:\GitHub\WeiYing\library\src\main\shaders"/></dataSet><dataSet config="debug"><source path="A:\GitHub\WeiYing\library\src\debug\shaders"/></dataSet></merger>
+=======
 <merger version="3"><dataSet config="main"><source path="F:\github111\WeiYing\library\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\github111\WeiYing\library\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 85d0803843116cc76f4cb0a6c478baad18c642ae
+>>>>>>> 7ae0fee9f7049a296d3525801e29dd76d709ed8b

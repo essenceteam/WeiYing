@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
  * Created by liufan on 2018/5/22.
  */
 
-public class Maadapter  extends BaseAdapter{
+public class Maadapter extends BaseAdapter {
     public Maadapter(Context context){
 
     }
