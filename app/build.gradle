@@ -34,6 +34,14 @@ android {
         compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
         compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
         compile 'com.zhy:autolayout:1.4.5'
+        //xbanner
+        compile 'com.xhb:xbanner:1.2.2'
+        //picasso图片
+        compile 'com.squareup.picasso:picasso:2.5.1'
+        //recyclerview
+        compile 'com.android.support:recyclerview-v7:26.1.0'
+        //fresco  图片
+        compile 'com.facebook.fresco:fresco:0.14.1+'
     }
 }
 dependencies {
