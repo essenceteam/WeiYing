@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.example.liufan.weiyingapplication.Lateralspreads.ResideLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/resideLayout"
     android:layout_height="match_parent">
@@ -37,13 +38,27 @@
             android:text="微影，微一下"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
-
+        <RelativeLayout
+            android:id="@+id/le"
+            android:layout_width="match_parent"
+            android:layout_height="860px"
+            android:layout_below="@id/desc">
         <ListView
             android:id="@+id/resideListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/desc"
             android:layout_marginLeft="25dp"></ListView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/le"
+            >
+            <include layout="@layout/resideitemlayout"/>
+        </RelativeLayout>
+
     </RelativeLayout>
 
     <RelativeLayout
