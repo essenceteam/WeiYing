@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="A:\GitHub\WeiYing\library\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="A:\GitHub\WeiYing\library\src\debug\jniLibs"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="D:\dashixun1\git_shi1\WeiYing\library\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\dashixun1\git_shi1\WeiYing\library\src\debug\jniLibs"/></dataSet></merger>
+>>>>>>> 7f6f7c3bd465dadcecb2ce93563bc9adbce7e278
