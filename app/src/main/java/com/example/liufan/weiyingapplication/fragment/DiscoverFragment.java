@@ -18,10 +18,14 @@ import com.example.liufan.weiyingapplication.R;
  */
 
 public class DiscoverFragment  extends Fragment {
+
+    private View view;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate (R.layout.discover_layout, container, false);
+        view = inflater.inflate (R.layout.discover_layout, container, false);
+
         return view;
     }
 }

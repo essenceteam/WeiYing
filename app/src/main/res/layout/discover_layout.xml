@@ -10,4 +10,7 @@
         android:layout_height="match_parent"
         app:rotation_degrees="15.5"
         />
+
+    <include layout="@layout/buttons" />
+
 </LinearLayout>
