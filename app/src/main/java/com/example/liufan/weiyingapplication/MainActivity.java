@@ -65,7 +65,7 @@ public class MainActivity extends BaseActivity {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
                 arr1 = new ArrayList<> ();
                 for (int i = 0; i <name.length ; i++) {
-                    ResideBean ResideBean=new ResideBean (name[i],R.drawable.fff);
+                    ResideBean ResideBean=new ResideBean (name[i],R.drawable.collection);
                     arr1.add (ResideBean);
                 }
                 ResideBaseAdapter ResideBaseAdapter=new ResideBaseAdapter (MainActivity.this,arr1);

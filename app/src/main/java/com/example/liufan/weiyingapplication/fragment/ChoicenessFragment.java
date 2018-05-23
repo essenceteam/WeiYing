@@ -51,7 +51,7 @@ public class ChoicenessFragment extends BaseFragment implements OnView {
         xbanner = view.findViewById(R.id.xbanner);
         rlay = view.findViewById(R.id.rlay);
         rlay.setLayoutManager(new LinearLayoutManager(getActivity()));
-        
+
         return view;
     }
     @Override

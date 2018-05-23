@@ -89,7 +89,7 @@ public class SettingActivity extends BaseActivity {
         rl_feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            
+
             }
         });
 
