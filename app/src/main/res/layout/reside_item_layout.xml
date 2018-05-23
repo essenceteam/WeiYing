@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50pt">
     <ImageView
         android:id="@+id/img"
-        android:layout_width="100px"
-        android:layout_height="100px"
-        android:src="@drawable/fff"/>
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:src="@drawable/collection"/>
     <TextView
         android:id="@+id/name"
-        android:textSize="25dp"
-        android:layout_marginLeft="15px"
+        android:textSize="35pt"
+        android:layout_marginLeft="15pt"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

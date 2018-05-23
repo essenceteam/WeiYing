@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#66CC00">
+        android:background="@drawable/bg">
 
         <ImageView
             android:layout_width="match_parent"
@@ -54,8 +54,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/le"
-            >
+            android:layout_below="@id/le">
             <include layout="@layout/resideitemlayout"/>
         </RelativeLayout>
 
