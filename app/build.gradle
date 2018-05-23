@@ -26,6 +26,9 @@ android {
         testImplementation 'junit:junit:4.12'
         androidTestImplementation 'com.android.support.test:runner:1.0.2'
         androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+        //SnackBar的依赖
+        compile 'com.android.support:appcompat-v7:23.3.0'
+        compile 'com.android.support:design:23.3.0'
         //Rxjava
         compile 'io.reactivex.rxjava2:rxjava:2.0.1'
         compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
@@ -46,6 +49,7 @@ android {
         //butterknife
         compile 'com.jakewharton:butterknife:8.4.0'
         annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+        compile 'com.android.support:appcompat-v7:23.1.1'
     }
 }
 dependencies {
