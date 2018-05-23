@@ -4,23 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.liufan.weiyingapplication.myde.view.SettingActivity"
-    android:orientation="vertical">
-<LinearLayout
-    android:layout_marginTop="80pt"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#000000"
-    android:orientation="horizontal">
-    <ImageView
-        android:id="@+id/img_setting"
-        style="@style/lmatch_hwrap_style"
-        android:background="@mipmap/back" />
-    <TextView
+    android:background="@drawable/bg_colorful"
+    android:orientation="vertical"
+    tools:context="com.example.liufan.weiyingapplication.myde.view.SettingActivity">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="设置"
-        android:textColor="#339933"
-        android:gravity="center"/>
+        android:layout_marginTop="80pt"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_setting"
+            style="@style/lmatch_hwrap_style"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#339933" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend"
+        style="@style/settingItemStyle">
+
+        <TextView
+            style="@style/settingItemTvStyle"
+            android:text="@string/setting_recommend" />
+
+        <ImageView style="@style/settingItemImgStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clearcache"
+        style="@style/settingItemLittleMarginStyle">
+
+        <TextView
+            style="@style/settingItemTvStyle"
+            android:text="@string/setting_recommend_clear" />
+
+        <TextView
+            android:id="@+id/tv_cache"
+            style="@style/both_wrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0kb"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        style="@style/settingItemStyle">
+
+        <TextView
+            style="@style/settingItemTvStyle"
+            android:text="@string/about" />
+
+        <ImageView style="@style/settingItemImgStyle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        style="@style/settingItemLittleMarginStyle">
+
+        <TextView
+            style="@style/settingItemTvStyle"
+            android:text="@string/feedback" />
+
+        <ImageView style="@style/settingItemImgStyle" />
+    </RelativeLayout>
 </LinearLayout>
-</LinearLayout>
+
