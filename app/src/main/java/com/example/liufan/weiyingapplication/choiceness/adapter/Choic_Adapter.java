@@ -4,11 +4,11 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.liufan.weiyingapplication.R;
 import com.example.liufan.weiyingapplication.choiceness.Bean.ShouyeBean;
+import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;
 
@@ -30,15 +30,20 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
         View view = View.inflate(context, R.layout.choic_ada_view, null);
         MyViewHobler myViewHobler = new MyViewHobler(view);
         return myViewHobler;
-    }
+}
 
     @Override
     public void onBindViewHolder(MyViewHobler holder, int position) {
 
-        holder.choic_ada_view_tv.setText(list.get(position).getTitle());
-       // Picasso.with(context).load(list.get(position).getChildList().get(position).getAngleIcon()).placeholder(R.drawable.ic_launcher_background).into(holder.choic_ada_view_sim);
+        holder.choic_ada_view_tv.setText(list.get(position).getChildList().get(0).getTitle());
+        String pic = list.get(position).getChildList().get(0).getPic();
+        if (pic.equals("") || pic == "") {
+            return;
+        } else {
+//            Picasso.with(context).load(pic).placeholder(R.drawable.ic_launcher_background).into(holder.choic_ada_view_sim);
+            holder.choic_ada_view_sim.setImageURI(pic);
+        }
     }
-
     @Override
     public int getItemCount() {
         return list.size();
@@ -47,8 +52,7 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
     class MyViewHobler extends RecyclerView.ViewHolder{
 
         private final TextView choic_ada_view_tv;
-        private final ImageView choic_ada_view_sim;
-
+        private final SimpleDraweeView choic_ada_view_sim;
         public MyViewHobler(View itemView) {
             super(itemView);
             choic_ada_view_tv = itemView.findViewById(R.id.choic_ada_view_tv);

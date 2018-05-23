@@ -43,13 +43,15 @@ public class ChoicenessFragment extends BaseFragment implements OnView {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = View.inflate(getActivity(), R.layout.choiceness_view, null);
+        View view = inflater.inflate(R.layout.choiceness_view, container, false);
+//        View Xview = View.inflate(getActivity(), R.layout.xbanner_view, null);
         getXbammer_tu();
         logPresenter = new LogPresenter(this);
         logPresenter.getPresenter();
         xbanner = view.findViewById(R.id.xbanner);
         rlay = view.findViewById(R.id.rlay);
         rlay.setLayoutManager(new LinearLayoutManager(getActivity()));
+        
         return view;
     }
     @Override
