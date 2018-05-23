@@ -69,4 +69,11 @@
         <item name="android:paddingRight">20pt</item>
         <item name="android:layout_marginTop">20pt</item>
     </style>
+    <style name="MenuStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">32pt</item>
+    </style>
 </resources>

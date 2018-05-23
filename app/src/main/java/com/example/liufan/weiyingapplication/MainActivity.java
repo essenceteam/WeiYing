@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity {
     protected void getView() {
         tab_rg_menu = findViewById(R.id.tab_rg_menu);
         resideLayout = findViewById (R.id.resideLayout);
-        resideListView = findViewById (R.id.resideListView);
+        //resideListView = findViewById (R.id.resideListView);
     }
 
     @Override
@@ -63,13 +63,6 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onPanelOpened(View panel) {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
-                arr1 = new ArrayList<> ();
-                for (int i = 0; i <name.length ; i++) {
-                    ResideBean ResideBean=new ResideBean (name[i],R.drawable.collection);
-                    arr1.add (ResideBean);
-                }
-                ResideBaseAdapter ResideBaseAdapter=new ResideBaseAdapter (MainActivity.this,arr1);
-                resideListView.setAdapter (ResideBaseAdapter);
 
             }
 
