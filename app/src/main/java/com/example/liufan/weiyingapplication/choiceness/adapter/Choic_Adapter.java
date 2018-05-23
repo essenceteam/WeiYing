@@ -19,6 +19,7 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
 
     Context context;
     List<ShouyeBean.RetBean.ListBean> list;
+    private Itemclick item;
 
     public Choic_Adapter(Context context, List<ShouyeBean.RetBean.ListBean> list) {
         this.context = context;
@@ -33,7 +34,7 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
 }
 
     @Override
-    public void onBindViewHolder(MyViewHobler holder, int position) {
+    public void onBindViewHolder(final MyViewHobler holder, final int position) {
 
         holder.choic_ada_view_tv.setText(list.get(position).getChildList().get(0).getTitle());
         String pic = list.get(position).getChildList().get(0).getPic();
@@ -43,6 +44,19 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
 //            Picasso.with(context).load(pic).placeholder(R.drawable.ic_launcher_background).into(holder.choic_ada_view_sim);
             holder.choic_ada_view_sim.setImageURI(pic);
         }
+
+        //item为接口的变量名
+        if (item!=null){
+            //holder为Myhodler holder的参数
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //调用接口的方法
+                    item.itemclick(holder.itemView,position);
+                }
+            });
+        }
+
     }
     @Override
     public int getItemCount() {
@@ -59,4 +73,15 @@ public class Choic_Adapter extends RecyclerView.Adapter<Choic_Adapter.MyViewHobl
             choic_ada_view_sim = itemView.findViewById(R.id.choic_ada_view_sim);
         }
     }
+
+    //定义接口
+    public interface Itemclick{
+        void itemclick(View view,int position);
+    }
+
+    //定义方法   参数1为接口  2为接口的变量名
+    public void OnClickItemjiu(Itemclick item){
+        this.item=item;
+    }
+
 }
