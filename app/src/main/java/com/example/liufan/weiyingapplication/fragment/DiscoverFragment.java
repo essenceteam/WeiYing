@@ -13,8 +13,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.liufan.weiyingapplication.Discover.Base.IOnView;
+import com.example.liufan.weiyingapplication.Discover.Bean.DiscoverBean;
+import com.example.liufan.weiyingapplication.Discover.Presnter.Presneter;
 import com.example.liufan.weiyingapplication.MainActivity;
 import com.example.liufan.weiyingapplication.R;
+import com.example.liufan.weiyingapplication.choiceness.view.OnView;
 import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 
 import java.util.ArrayList;
@@ -28,19 +32,20 @@ import butterknife.Unbinder;
  * Created by liufan on 2018/5/21.
  */
 
-public class DiscoverFragment extends Fragment {
+public class DiscoverFragment extends Fragment implements IOnView {
 
     @BindView(R.id.frame)
     SwipeFlingAdapterView flingContainer;
-    @BindView(R.id.left)
+   /* @BindView(R.id.left)
     Button left;
     @BindView(R.id.right)
-    Button right;
+    Button right;*/
     Unbinder unbinder;
     private View view;
     private ArrayList<String> al;
     private ArrayAdapter arrayAdapter;
     private int i;
+    private Presneter presneter;
 
     @Nullable
     @Override
@@ -48,6 +53,8 @@ public class DiscoverFragment extends Fragment {
         view = inflater.inflate (R.layout.discover_layout, container, false);
 
         unbinder = ButterKnife.bind (this, view);
+        presneter = new Presneter (this);
+        presneter.getpresenter ();
         getdata ();
         return view;
     }
@@ -122,18 +129,18 @@ public class DiscoverFragment extends Fragment {
     }
 
 
-    @OnClick(R.id.right)
+   /* @OnClick(R.id.right)
     public void right() {
-        /**
+        *//**
          * Trigger the right event manually.
-         */
+         *//*
         flingContainer.getTopCardListener ().selectRight ();
     }
 
     @OnClick(R.id.left)
     public void left() {
         flingContainer.getTopCardListener ().selectLeft ();
-    }
+    }*/
 
 
 
@@ -143,5 +150,25 @@ public class DiscoverFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView ();
         unbinder.unbind ();
+    }
+
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy ();
+        presneter.onDestroys ();
+    }
+
+    @Override
+    public void OnScuuess(Object Object) {
+        DiscoverBean object = (DiscoverBean) Object;
+        Log.i ("tag", "OnScuuess: "+object.toString ());
+
+    }
+
+    @Override
+    public void OnError(Throwable String) {
+
     }
 }

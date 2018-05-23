@@ -2,15 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:layout_weight="2"
         android:id="@+id/frame"
         android:background="#ffeee9e2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:rotation_degrees="15.5"
         />
-
-    <include layout="@layout/buttons" />
-
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <Button
+        android:background="#669900"
+        android:text="换一批"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

@@ -49,7 +49,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/right" />
+            android:background="@mipmap/right"
+            android:layout_marginLeft="500pt"/>
     </LinearLayout>
 
     <View
@@ -79,7 +80,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/right" />
+            android:background="@mipmap/right"
+            android:layout_marginLeft="500pt"/>
     </LinearLayout>
 
     <View
@@ -109,7 +111,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/right" />
+            android:background="@mipmap/right"
+            android:layout_marginLeft="500pt"/>
     </LinearLayout>
 
     <View
@@ -137,7 +140,8 @@
             android:text="主题" />
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_marginLeft="500pt"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@mipmap/right" />
     </LinearLayout>
