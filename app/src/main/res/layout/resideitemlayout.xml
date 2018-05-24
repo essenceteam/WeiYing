@@ -6,19 +6,19 @@
 
     >
     <LinearLayout
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="25pt"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@drawable/fff"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:src="@drawable/collection"
             />
         <TextView
-            android:textSize="25dp"
-            android:layout_marginLeft="15px"
+            android:textSize="25pt"
+            android:layout_marginLeft="15pt"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,17 +32,17 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@drawable/fff"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:src="@drawable/collection"
             />
         <TextView
-            android:textSize="25dp"
-            android:layout_marginLeft="15px"
+            android:textSize="25pt"
+            android:layout_marginLeft="15pt"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="关于"
+            android:text="主题"
             />
 
     </LinearLayout>

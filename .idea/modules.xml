@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/WeiYing.iml" filepath="$PROJECT_DIR$/WeiYing.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" />
+      <module fileurl="file://F:\github111\WeiYing\swiperefreshlayoutlibrary\swiperefreshlayoutlibrary.iml" filepath="F:\github111\WeiYing\swiperefreshlayoutlibrary\swiperefreshlayoutlibrary.iml" />
     </modules>
   </component>
 </project>

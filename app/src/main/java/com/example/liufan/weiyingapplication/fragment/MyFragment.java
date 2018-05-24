@@ -28,7 +28,7 @@ import java.util.List;
  */
 
 public class MyFragment  extends Fragment {
-
+    public static final String SET_THEME = "SET_THEME";
     private ImageView img_setting;
     private ListView my_list;
     private View inflate;
@@ -52,6 +52,7 @@ public class MyFragment  extends Fragment {
     }
 
     private void inData() {
+        //历史
         rl_record.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,12 +60,14 @@ public class MyFragment  extends Fragment {
                 getActivity().startActivity(intent);
             }
         });
+        //缓存
         rl_down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(),"敬请期待",Toast.LENGTH_LONG).show();
             }
         });
+        //收藏
         rl_collection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,12 +75,14 @@ public class MyFragment  extends Fragment {
                 getActivity().startActivity(intent);
             }
         });
+        //主题
         rl_them.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"主题",Toast.LENGTH_LONG).show();
+
             }
         });
+        //设置
         img_setting1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

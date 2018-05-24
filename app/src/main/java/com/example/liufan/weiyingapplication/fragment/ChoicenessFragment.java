@@ -4,6 +4,7 @@ package com.example.liufan.weiyingapplication.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,7 +13,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.liufan.weiyingapplication.R;
-import com.example.liufan.weiyingapplication.base.BaseFragment;
 import com.example.liufan.weiyingapplication.choiceness.Bean.ShouyeBean;
 import com.example.liufan.weiyingapplication.choiceness.adapter.Choic_Adapter;
 import com.example.liufan.weiyingapplication.choiceness.presenter.LogPresenter;
@@ -27,7 +27,7 @@ import java.util.List;
  * Created by liufan on 2018/5/21.
  */
 
-public class ChoicenessFragment extends BaseFragment implements OnView {
+public class ChoicenessFragment extends Fragment implements OnView {
 
     public LogPresenter logPresenter;
     private XBanner xbanner;
@@ -43,7 +43,8 @@ public class ChoicenessFragment extends BaseFragment implements OnView {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View view = View.inflate(getActivity(), R.layout.choiceness_view, null);
+        View view = inflater.inflate(R.layout.choiceness_view, container, false);
+//        View Xview = View.inflate(getActivity(), R.layout.xbanner_view, null);
         getXbammer_tu();
         logPresenter = new LogPresenter(this);
         logPresenter.getPresenter();
@@ -52,9 +53,7 @@ public class ChoicenessFragment extends BaseFragment implements OnView {
         rlay.setLayoutManager(new LinearLayoutManager(getActivity()));
         return view;
     }
-    @Override
-    protected void loadData() {
-    }
+
     @Override
     public void OnSoufder(Object object) {
         ShouyeBean shouyeBean = (ShouyeBean) object;
@@ -69,8 +68,13 @@ public class ChoicenessFragment extends BaseFragment implements OnView {
         List<ShouyeBean.RetBean.ListBean> list = shouyeBean.getRet().getList();
         Choic_Adapter choic_adapter = new Choic_Adapter(getActivity(),list);
         rlay.setAdapter(choic_adapter);
-    }
+        choic_adapter.OnClickItemjiu(new Choic_Adapter.Itemclick() {
+            @Override
+            public void itemclick(View view, int position) {
 
+            }
+        });
+    }
     public void getXbammer_tu() {
         for (int i = 0; i < ss.length; i++) {
             xbammer_tu.add(ss[i]);
