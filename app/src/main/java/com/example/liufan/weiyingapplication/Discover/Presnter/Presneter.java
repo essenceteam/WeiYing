@@ -17,12 +17,19 @@ public class Presneter extends BasePresnter<IOnView> implements OnModler{
         super (onView);
         modler = new Modler (this);
     }
-    public void getpresenter(){
-    modler.getModler ();
+    public void getpresenter(String catalogId){
+      modler.getModler (catalogId);
+    }
+
+
+
+    @Override
+    public void OnScuuess(Object Object) {
+        p.OnScuuess (Object);
     }
 
     @Override
-    public void OnScuuess(String String) {
-        p.OnScuuess (String);
+    public void OnError(Throwable String) {
+        p.OnError (String);
     }
 }

@@ -18,6 +18,7 @@ import com.example.liufan.weiyingapplication.R;
 import com.example.liufan.weiyingapplication.myde.adapter.Maadapter;
 import com.example.liufan.weiyingapplication.myde.view.CollectActivity;
 import com.example.liufan.weiyingapplication.myde.view.HistoryActivity;
+import com.example.liufan.weiyingapplication.myde.view.SettingActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +36,7 @@ public class MyFragment  extends Fragment {
     private LinearLayout rl_down;
     private LinearLayout rl_collection;
     private LinearLayout rl_them;
+    private ImageView img_setting1;
 
     @Nullable
     @Override
@@ -76,6 +78,13 @@ public class MyFragment  extends Fragment {
                 Toast.makeText(getActivity(),"主题",Toast.LENGTH_LONG).show();
             }
         });
+        img_setting1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                getActivity().startActivity(intent);
+            }
+        });
     }
 
     private void init() {
@@ -83,6 +92,7 @@ public class MyFragment  extends Fragment {
         rl_down = inflate.findViewById(R.id.rl_down);
         rl_collection = inflate.findViewById(R.id.rl_collection);
         rl_them = inflate.findViewById(R.id.rl_them);
+        img_setting1 = inflate.findViewById(R.id.img_setting);
     }
 
 
