@@ -13,9 +13,17 @@ public class LogPresenter extends BasePresenter<OnView> implements OnMoudle {
         super(onView);
         logMoudle = new LogMoudle(this);
     }
+
+
+
     public void getPresenter(){
         logMoudle.getShouYe();
     }
+    public void getShiPin(String mediaId){
+        logMoudle.getShiPin(mediaId);
+    }
+
+
     @Override
     public void OnSoufder(Object object) {
         v.OnSoufder(object);

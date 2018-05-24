@@ -2,11 +2,13 @@ package com.example.liufan.weiyingapplication.fragment;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ import com.example.liufan.weiyingapplication.choiceness.Bean.ShouyeBean;
 import com.example.liufan.weiyingapplication.choiceness.adapter.Choic_Adapter;
 import com.example.liufan.weiyingapplication.choiceness.presenter.LogPresenter;
 import com.example.liufan.weiyingapplication.choiceness.view.OnView;
+import com.example.liufan.weiyingapplication.choiceness.view.ShiPinXQ;
 import com.squareup.picasso.Picasso;
 import com.stx.xhb.xbanner.XBanner;
 
@@ -65,13 +68,17 @@ public class ChoicenessFragment extends Fragment implements OnView {
                 Picasso.with(getActivity()).load(xbammer_tu.get(position)).placeholder(R.drawable.ic_launcher_background).into((ImageView) view);
             }
         });
-        List<ShouyeBean.RetBean.ListBean> list = shouyeBean.getRet().getList();
+        final List<ShouyeBean.RetBean.ListBean> list = shouyeBean.getRet().getList();
         Choic_Adapter choic_adapter = new Choic_Adapter(getActivity(),list);
         rlay.setAdapter(choic_adapter);
         choic_adapter.OnClickItemjiu(new Choic_Adapter.Itemclick() {
             @Override
             public void itemclick(View view, int position) {
-
+                String dataId = list.get(position).getChildList().get(0).getDataId();
+                Log.i("LLLLLLLLLLLL","dataId:"+dataId);
+                Intent intent = new Intent(getActivity(), ShiPinXQ.class);
+                intent.putExtra("dataId",""+dataId);
+                startActivity(intent);
             }
         });
     }

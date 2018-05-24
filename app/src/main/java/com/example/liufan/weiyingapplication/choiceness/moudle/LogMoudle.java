@@ -4,6 +4,7 @@ import android.util.Log;
 
 import com.example.liufan.weiyingapplication.choiceness.Api.Choi_Api;
 import com.example.liufan.weiyingapplication.choiceness.Api.Choi_Apiservers;
+import com.example.liufan.weiyingapplication.choiceness.Bean.ShiPinBean;
 import com.example.liufan.weiyingapplication.choiceness.Bean.ShouyeBean;
 import com.example.liufan.weiyingapplication.choiceness.presenter.OnMoudle;
 import com.example.liufan.weiyingapplication.util.RetrofitUtil;
@@ -36,5 +37,17 @@ public class LogMoudle extends BaseMoudle<OnMoudle> {
                     }
                 });
     }
+    public void getShiPin(String mediaId){
+        Observable<ShiPinBean> shiPin = RetrofitUtil.getInData().getRetrofit(Choi_Api.net, Choi_Apiservers.class).getShiPin(mediaId);
+        shiPin.subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Consumer<ShiPinBean>() {
+                    @Override
+                    public void accept(ShiPinBean shiPinBean) throws Exception {
+                        m.OnSoufder(shiPinBean);
+                    }
+                });
+    }
+
 
 }

@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 //apply plugin: 'android-apt'
 android {
     compileSdkVersion 26
+
     defaultConfig {
         applicationId "com.example.liufan.weiyingapplication"
         minSdkVersion 15
@@ -10,15 +11,37 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
-        release {
+        debug {
+//            signingConfig signingConfigs.release
+//            zipAlignEnabled false
             minifyEnabled false
+//            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+//            signingConfig signingConfigs.release
+//            zipAlignEnabled true
+            minifyEnabled true
+//            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     packagingOptions {//加上这写代码
         pickFirst 'META-INF/*'
     }
+
+//    applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+////            outputFileName = "${variant.name}-${variant.versionName}-${releaseTime()}(${variant.versionCode}).apk"
+//        }
+//    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
 
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -52,9 +75,9 @@ android {
         annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
         compile 'com.android.support:appcompat-v7:23.1.1'
         //视频
-        compile 'com.jakewharton:butterknife:6.1.0'
-//        compile 'com.jakewharton:butterknife:8.4.0'
-//        apt 'com.jakewharton:butterknife-compiler:8.4.0'
+        //compile 'com.jakewharton:butterknife:6.1.0'
+        compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.5'
+//        compile(name: 'ijkplayer-java-release', ext: 'aar') /**编译ijkplayer-java-release.aar文件*/
     }
 }
 dependencies {

@@ -25,8 +25,8 @@
         <activity android:name=".myde.view.HistoryActivity" />
         <activity android:name=".myde.view.CollectActivity" />
         <activity android:name=".myde.view.SettingActivity" />
-        <activity android:name=".myde.view.WelcomeActivity">
-        </activity>
+        <activity android:name=".myde.view.WelcomeActivity"></activity>
+        <activity android:name=".choiceness.view.ShiPinXQ"/>
     </application>
 
 </manifest>
