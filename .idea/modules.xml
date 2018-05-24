@@ -6,10 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" />
-=======
->>>>>>> f07e76f69406c8dd09191fe8fe9b7f4a2dab5eac
     </modules>
   </component>
 </project>
