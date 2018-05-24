@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/dkplayer-x86_64/dkplayer-x86_64.iml" filepath="$PROJECT_DIR$/dkplayer-x86_64/dkplayer-x86_64.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" filepath="$PROJECT_DIR$/swiperefreshlayoutlibrary/swiperefreshlayoutlibrary.iml" />
+      <module fileurl="file://F:\github111\WeiYing\swiperefreshlayoutlibrary\swiperefreshlayoutlibrary.iml" filepath="F:\github111\WeiYing\swiperefreshlayoutlibrary\swiperefreshlayoutlibrary.iml" />
     </modules>
   </component>
 </project>
