@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "A:\\GitHub\\WeiYing\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "A:\\GitHub\\WeiYing\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "315,370",
+                        "endLines": "3,8",
+                        "endColumns": "54,12",
+                        "endOffsets": "365,546"
+                    }
+                }
+            ]
+        }
+    ]
+}
