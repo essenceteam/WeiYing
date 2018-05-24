@@ -1,9 +1,5 @@
 package com.example.liufan.weiyingapplication;
 
-
-
-
-
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ListView;
@@ -33,7 +29,6 @@ public class MainActivity extends BaseActivity {
     private ResideLayout resideLayout;
     private List<ResideBean> arr1;
     private   String name[]={"我的收藏","我的下载","福利","分享","建议反馈","设置"};
-    private ListView resideListView;
 
 
     @Override
@@ -63,17 +58,6 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onPanelOpened(View panel) {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
-<<<<<<< HEAD
-                arr1 = new ArrayList<> ();
-                for (int i = 0; i <name.length ; i++) {
-                    ResideBean ResideBean=new ResideBean (name[i],R.drawable.collection);
-                    arr1.add (ResideBean);
-                }
-                ResideBaseAdapter ResideBaseAdapter=new ResideBaseAdapter (MainActivity.this,arr1);
-                resideListView.setAdapter (ResideBaseAdapter);
-=======
->>>>>>> f07e76f69406c8dd09191fe8fe9b7f4a2dab5eac
-
             }
 
             @Override
