@@ -45,25 +45,20 @@ public class MainActivity extends BaseActivity {
     protected void getView() {
         tab_rg_menu = findViewById(R.id.tab_rg_menu);
         resideLayout = findViewById (R.id.resideLayout);
-        //resideListView = findViewById (R.id.resideListView);
+//        resideListView = findViewById (R.id.resideListView);
     }
 
     @Override
     protected void getData() {
 
         resideLayout.setPanelSlideListener (new ResideLayout.PanelSlideListener () {
-
-
-
             @Override
             public void onPanelSlide(View panel, float slideOffset) {
 
             }
-
             @Override
             public void onPanelOpened(View panel) {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
-<<<<<<< HEAD
                 arr1 = new ArrayList<> ();
                 for (int i = 0; i <name.length ; i++) {
                     ResideBean ResideBean=new ResideBean (name[i],R.drawable.collection);
@@ -71,17 +66,12 @@ public class MainActivity extends BaseActivity {
                 }
                 ResideBaseAdapter ResideBaseAdapter=new ResideBaseAdapter (MainActivity.this,arr1);
                 resideListView.setAdapter (ResideBaseAdapter);
-=======
->>>>>>> f07e76f69406c8dd09191fe8fe9b7f4a2dab5eac
-
             }
-
             @Override
             public void onPanelClosed(View panel) {
                 Toast.makeText (MainActivity.this,"关闭",Toast.LENGTH_SHORT).show ();
             }
         });
-
         //精选
         choicenessFragment = new ChoicenessFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.lf, choicenessFragment).commit();
