@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
-    <ImageView
-        android:layout_width="match_parent"
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="780pt"
         android:layout_height="300pt"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40pt"
         android:id="@+id/choic_ada_view_sim"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="34pt"
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
         android:id="@+id/choic_ada_view_tv"/>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

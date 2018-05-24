@@ -63,6 +63,16 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onPanelOpened(View panel) {
                 Toast.makeText (MainActivity.this,"打开",Toast.LENGTH_SHORT).show ();
+<<<<<<< HEAD
+                arr1 = new ArrayList<> ();
+                for (int i = 0; i <name.length ; i++) {
+                    ResideBean ResideBean=new ResideBean (name[i],R.drawable.collection);
+                    arr1.add (ResideBean);
+                }
+                ResideBaseAdapter ResideBaseAdapter=new ResideBaseAdapter (MainActivity.this,arr1);
+                resideListView.setAdapter (ResideBaseAdapter);
+=======
+>>>>>>> f07e76f69406c8dd09191fe8fe9b7f4a2dab5eac
 
             }
 
