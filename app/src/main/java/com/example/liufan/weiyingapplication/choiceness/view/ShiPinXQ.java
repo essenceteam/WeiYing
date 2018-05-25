@@ -45,7 +45,7 @@ public class ShiPinXQ extends BaseActivity implements OnView {
 
 //        View rootView = getLayoutInflater().from(this).inflate(R.layout.simple_player_view_player, null);
 //        setContentView(rootView);
-        String url ="http://ips.ifeng.com/video19.ifeng.com/video09/2014/06/16/1989823-102-086-0009.mp4";
+        String url ="http://haokan.baidu.com/v?pd=wisenatural&vid=17574387482530171728";
         new PlayerView(this)
                 .setTitle("凤凰视频")//标题
                 .setScaleType(PlayStateParams.fitparent)

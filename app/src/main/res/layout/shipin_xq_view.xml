@@ -9,7 +9,17 @@
         layout="@layout/simple_player_view_player"
         android:layout_width="match_parent"
         android:layout_height="280pt"/>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choic_tab">
+    </android.support.design.widget.TabLayout>
 
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/choic_viewpager">
+    </android.support.v4.view.ViewPager>
 
 
 </LinearLayout>
