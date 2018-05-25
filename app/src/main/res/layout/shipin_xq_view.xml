@@ -9,11 +9,7 @@
         layout="@layout/simple_player_view_player"
         android:layout_width="match_parent"
         android:layout_height="280pt"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30pt"
-        android:text="是否闪光点"/>
+
 
 
 </LinearLayout>

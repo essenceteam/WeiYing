@@ -1,7 +1,6 @@
 package com.example.liufan.weiyingapplication.choiceness.view;
 
 import android.content.Intent;
-import android.view.View;
 
 import com.dou361.ijkplayer.widget.PlayStateParams;
 import com.dou361.ijkplayer.widget.PlayerView;
@@ -30,8 +29,7 @@ public class ShiPinXQ extends BaseActivity implements OnView {
 //        Log.i("LLLLLLLLLLLLLssp","dataIds:"+dataId);
         logPresenter = new LogPresenter(this);
         logPresenter.getShiPin(dataId);
-        View rootView = getLayoutInflater().from(this).inflate(R.layout.simple_player_view_player, null);
-        setContentView(rootView);
+
 
     }
 
@@ -44,7 +42,10 @@ public class ShiPinXQ extends BaseActivity implements OnView {
     public void OnSoufder(Object object) {
         ShiPinBean shiPinBean = (ShiPinBean) object;
 //        Log.i("LLLLLLLLLLLshipin",""+shiPinBean.getCode()+shiPinBean.getMsg());
-        String url ="http://mvpc.eastday.com/vyule/20170828/20170828210701439537799_1_06400360.mp4";
+
+//        View rootView = getLayoutInflater().from(this).inflate(R.layout.simple_player_view_player, null);
+//        setContentView(rootView);
+        String url ="http://ips.ifeng.com/video19.ifeng.com/video09/2014/06/16/1989823-102-086-0009.mp4";
         new PlayerView(this)
                 .setTitle("凤凰视频")//标题
                 .setScaleType(PlayStateParams.fitparent)
