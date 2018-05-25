@@ -1,1 +1,1 @@
-include ':app', ':library', ':swiperefreshlayoutlibrary'
+include ':app', ':library', ':swiperefreshlayoutlibrary', ':dkplayer-arm64', ':dkplayer-armv5', ':dkplayer-armv7a', ':dkplayer-java', ':dkplayer-x86', ':dkplayer-x86_64'

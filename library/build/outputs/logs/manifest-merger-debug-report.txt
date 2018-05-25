@@ -1,5 +1,42 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
+ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:11-45
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+application
+ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml:2:5-20
+uses-sdk
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		ADDED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+		INJECTED from A:\GitHub\WeiYing\library\src\main\AndroidManifest.xml
+=======
 ADDED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
 INJECTED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
 INJECTED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml:1:1-3:12
@@ -35,3 +72,4 @@ INJECTED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml
 		INJECTED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml
 		ADDED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml
 		INJECTED from F:\github111\WeiYing\library\src\main\AndroidManifest.xml
+>>>>>>> 8589a5f74bbb6c3b39fad728d1d023c6e0f1fd1b
